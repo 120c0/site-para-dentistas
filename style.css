@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+.action-bar {
+  background-color: #2B2D42;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.action-bar .action-bar-title {
+  padding: 18px;
+  color: white;
+  border-bottom: solid 1px #F7E733;
+}
+.action-bar .menu li a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+}
+.action-bar .menu li a:hover {
+  list-style: none;
+  background-color: #2ea184;
+}
+.post-image {
+  width: 80vw;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 20px auto 0 auto;
+}
+.post-image h1 {
+  font-size: 14pt;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+.generic-title {
+  text-align: center;
+}
+.about-desc {
+  padding: 0 20px 0 20px;
+}
+.contate-nos {
+  padding: 10px;
+}
+.contate-nos h1 {
+  font-size: 12pt;
+}
+.contate-nos input {
+  display: block;
+  padding: 5px;
+  width: 100%;
+}
+.contate-nos .information {
+  resize: none;
+  width: 100%;
+  margin-top: 4px;
+  padding: 5px;
+}
+.posts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
+.post-grid {
+  margin: auto;
+}
+.post-image-grid {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+.post-image-grid h1 {
+  font-size: 9pt;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* phone */
+@media only screen and (max-width: 500px) {
+  .action-bar .menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #41E2BA;
+  }
+  .action-bar .menu li {
+    list-style: none;
+    width: 100%;
+  }
+}
+/* PC */
+@media only screen and (min-width: 600px) {
+  .about-desc {
+    width: 70vw;
+  }
+  .action-bar .menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #41E2BA;
+  }
+  .action-bar .menu li {
+    list-style: none;
+  }
+  .post-image-grid h1 {
+    font-size: 11pt;
+    padding: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
